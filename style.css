@@ -25,7 +25,15 @@ background-image: url(assets/jello.png);
 }
 
 p {
-  background-color: rgba(0,0,0,1);
+  /* support IE */
+  background: rgba(0,0,0,1);
+  background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  /* background: linear-gradient(bottom, rgba(255,255,0,1), rgba(255,0,0,1)); */
+  /* support Chrome, Safari & Opera */
+  background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  /* support Mozilla & Firefox */
+  background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  /* background-color: rgba(0,0,0,1); */
   color: rgba(255,255,255,1);
   padding: 7px;
   text-align: justify;
@@ -33,4 +41,20 @@ p {
   position: absolute;
   bottom: 0;
   margin: 0;
+}
+
+.price {
+  float: right;
+}
+
+h1 {
+  font-family: 'Londrina Shadow', cursive;
+  font-size: 75px;
+  text-align: center;
+  margin: 60px 0 0 0;
+}
+
+h2 {
+  text-align: center;
+  margin: 0px 0 70px 0;
 }
