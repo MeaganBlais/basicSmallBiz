@@ -1,0 +1,22 @@
+body {
+  font-family: helvetica, sans-serif;
+  max-width: 600px;
+}
+
+div {
+  height: 200px;
+  background-size: cover;
+  margin: 0 auto;
+}
+
+.chocolate {
+  background-image: url(assets/cake.jpg);
+}
+
+.candy {
+background-image: url(assets/cottonCandy.jpg);
+}
+
+.jelly {
+background-image: url(assets/jello.png);
+}
